@@ -1,0 +1,62 @@
+
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+
+<!--Content for the EDIT page-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-4">
+        <h1><%= title %></h1>
+    
+        <form class="form" method="POST">
+            <div class="form-group">
+                <label for="nameTextField">Name</label>
+                <input type="text" class="form-control"
+                id="nameTextField"
+                placeholder="Enter contact Name"
+                name="name" 
+                value="<%= bcontact.name %>" 
+                required>
+                </div>
+    
+                
+                <div class="form-group">
+                     <label for="phoneTextField">Phone number</label>
+                    <input type="tel" class="form-control"
+                    id="phoneTextField"
+                    placeholder="Enter contact phone number"
+                    name="phone" 
+                    value="<%= bcontact.phone %>"
+                    required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="emailTextField">Email</label>
+                   <input type="text" class="form-control"
+                   id="emailTextField"
+                   placeholder="Enter contact Email"
+                   name="email" 
+                   value="<%= bcontact.email %>"
+                   required>
+               </div>
+               <button class ="btn btn-success">
+                <i class="fas fa-edit"></i>Submit Edit</button>
+    
+                <a href="/bcontact-list" class="btn btn-warning btn-sm">
+                <i class="fas fa-undo"></i>Cancel</a>
+    
+            </form>
+        </div>
+    </div>
+
+
+
+
+<%- include ../partials/bottom_nav.ejs %>
+
+<%- include ../partials/footer.ejs %>
+
+
+  

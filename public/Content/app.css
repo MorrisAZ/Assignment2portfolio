@@ -1,0 +1,24 @@
+/*Express Portfolio
+morris Zuniga
+Student ID: 822704615*/
+
+
+body {
+	background-color: #CCFFFF;
+	
+}
+td {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: large;
+	font-variant: small-caps;
+	text-transform: capitalize;
+}
+img {
+	border: thick outset #CCFF99;
+	border-radius: 20px;
+	position: static;
+	background:url(../images/LOGO1.png) no-repeat;
+}
+
+
+

@@ -1,0 +1,56 @@
+
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main_nav.ejs %>
+
+<!--Content for the LIST page-->
+
+
+
+<main class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-8">
+        <h1><%= title %></h1>
+
+        <% if (typeof displayName == 'string' && displayName){ %>
+        <a href="/bcontact-list/add" class="btn btn-primary" role="button">
+            <i class="fas fa-plus-circle"></i> Add business contact</a>
+            <% } %>
+        <br>
+        <table class="table table-bordered table-striped table-hover">
+            <!--Header Row-->
+            <tr>
+                <th class="text-center col-2">Name</th>
+                <th class="text-center col-2">Phone</th>
+                <th class="text-center col-1">Email</th>
+                <th class="text-center col-1"></th>
+                <th class="text-center col-1"></th>
+            </tr>
+
+        <!---->
+        <% for(let count= 0; count < BcontactList.length; count++) { %>
+            <tr>
+                <td class="text-center col-2"><%= BcontactList[count].name %></td>
+                <td class="text-center col-2"><%= BcontactList[count].phone %></td>
+                <td class="text-center col-1"><%= BcontactList[count].email %></td>
+                <td class="text-center col-1">
+                    <a href="/bcontact-list/edit/<%= BcontactList[count]._id %>" class="btn btn-primary btn-sm">
+                    <i class="fas fa-pencil-alt"></i> Edit</a>
+                    </td>
+                <td class="text-center col-1">
+                    <a href="/bcontact-list/delete/<%= BcontactList[count]._id %>" class="btn btn-danger btn-sm">
+                        <i class="fas fa-trash-alt"></i>Delete</a>
+            </tr>
+        <% } %>            
+        </table>    
+    </div>
+</div>    
+</main>
+
+
+<%- include ../partials/bottom_nav.ejs %>
+
+<%- include ../partials/footer.ejs %>
+
+
+  
