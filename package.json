@@ -36,7 +36,7 @@
     "@types/passport-local-mongoose": "^6.1.0"
   },
   "description": "assignment 2 portfolio with mongoDB and login authentication",
-  "main": "index.js",
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MorrisAZ/Assignment2portfolio.git"
