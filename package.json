@@ -1,9 +1,13 @@
 {
-  "name": "week-4",
+  "name": "assignment2mongdb_login",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "12.00.0",
+    "npm": "^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
@@ -30,5 +34,17 @@
     "@types/passport": "^1.0.7",
     "@types/passport-local": "^1.0.34",
     "@types/passport-local-mongoose": "^6.1.0"
-  }
+  },
+  "description": "assignment 2 portfolio with mongoDB and login authentication",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MorrisAZ/Assignment2portfolio.git"
+  },
+  "author": "Morris Zuniga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MorrisAZ/Assignment2portfolio/issues"
+  },
+  "homepage": "https://github.com/MorrisAZ/Assignment2portfolio#readme"
 }
